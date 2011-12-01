@@ -1,0 +1,19 @@
+.subject.list
+  %h2 Subjects
+  %table.listing{:summary => "Subject list"}
+    %tr.header
+      %th  
+      %th Subject
+      %th Visible
+      %th Pages
+      %th Actions
+    - @subjects.each do |subject|
+      %tr
+        %td=subject.position
+        %td=subject.name
+        %td.center #{subject.visible ? 'yes' : 'No'}
+        %td.center=subject.pages.size
+        %td.actions
+          =link_to "Show", {:action => 'show', :id => subject.id}, :class => 'action show'
+          =link_to "Edit",  "#", :class => 'action edit'
+          =link_to "Delete", "#", :class => 'action delete'
