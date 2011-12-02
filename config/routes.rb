@@ -1,6 +1,8 @@
 SimpleCms::Application.routes.draw do
+  resources :tasks
+
   resources :subjects
-  # match 'subjects/list' => 'subjects#list', :as => "list"
+  match 'subjects/list' => 'subjects#list', :as => "list"
   
   # root :to => "demo#index"
   

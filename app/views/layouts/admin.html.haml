@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %title 
+      Simple CMS | #{@page_title || 'Admin Area'}
+    %meta{:content => "Tyrone Gaylord", :name => "author"}
+  %body
+    #header
+      %h1 Simple CMS Admin
+    #main
+      - if !flash[:notice].blank?
+        .notice
+          = flash[:notice]
+      #content
+        = yield
+    #footer
+      %p#copyright Tyrone is the best biatch!!!

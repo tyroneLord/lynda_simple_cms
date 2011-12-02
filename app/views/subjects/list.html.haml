@@ -1,6 +1,4 @@
--if !flash[:notice].blank?
-  .notice
-    =flash[:notice]
+- @page_title = "Tyrone's Site"
 
 .subject.list
   %h2 Subjects
@@ -19,9 +17,10 @@
         %td.center #{subject.visible ? 'yes' : 'No'}
         %td.center=subject.pages.size
         %td.actions
-          =link_to "Show", subject_path(subject.id), :class => 'action show'
+          =link_to "Show", subject_path(subject), :class => 'action show'
           =link_to "Edit", edit_subject_path(subject.id), :class => 'action edit'
-          =link_to "Delete", subject_path(subject.id), :confirm => 'Are you sure', :method => :delete, :class => 'action delete'
+          =link_to "Delete", subject, :confirm => 'Are you sure', :method => :delete
+          
            
            
 / -if !flash[:notice].blank?

@@ -1,8 +1,6 @@
--if !flash[:notice].blank?
-  .notice
-    =flash[:notice]
+- @page_title = "Tyrone's Site"
 
-= link_to"/", {:action => 'list'}, :class => 'back-link'
+= link_to "Back To List", "/", {:action => 'list'}, :class => 'back-link'
 
 .subject.show
   %h2 Show Subject

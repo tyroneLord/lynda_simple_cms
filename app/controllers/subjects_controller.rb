@@ -1,9 +1,9 @@
 class SubjectsController < ApplicationController
-  
-  def index
-    list
-    render('list')
-  end
+  layout 'admin'
+  # def index
+  #   list
+  #   render('list')
+  # end
   
   def list
     #this is for READ part of CRUD
@@ -55,16 +55,23 @@ class SubjectsController < ApplicationController
     end
   end
   
-  def delete
-    # THIS THE DESTROY PART OF CRUD
-    @subject = Subject.find(params[:id])
-  end
+  # def delete
+  #     # THIS THE DESTROY PART OF CRUD
+  #     @subject = Subject.find(params[:id])
+  #   end
   
   def destroy
     # THIS THE DESTROY PART OF CRUD
-    flash[:notice] = "You have destoryed an object"
-    Subject.find(params[:id]).destroy
-    redirect_to(:action => 'list')
+    # flash[:notice] = "You have destoryed an object"
+    # Subject.find(params[:id]).destroy
+    # redirect_to(:action => 'list')
+    @subject = Subject.find(params[:id])
+    @subject.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(list_url) }
+      format.xml  
+    end
   end
   
 
