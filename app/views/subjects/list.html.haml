@@ -1,5 +1,10 @@
+-if !flash[:notice].blank?
+  .notice
+    =flash[:notice]
+
 .subject.list
   %h2 Subjects
+  = link_to "Add New Subject", new_subject_path, :class => 'action new'
   %table.listing{:summary => "Subject list"}
     %tr.header
       %th  
@@ -14,6 +19,32 @@
         %td.center #{subject.visible ? 'yes' : 'No'}
         %td.center=subject.pages.size
         %td.actions
-          =link_to "Show", {:action => 'show', :id => subject.id}, :class => 'action show'
-          =link_to "Edit",  "#", :class => 'action edit'
-          =link_to "Delete", "#", :class => 'action delete'
+          =link_to "Show", subject_path(subject.id), :class => 'action show'
+          =link_to "Edit", edit_subject_path(subject.id), :class => 'action edit'
+          =link_to "Delete", subject_path(subject.id), :confirm => 'Are you sure', :method => :delete, :class => 'action delete'
+           
+           
+/ -if !flash[:notice].blank?
+/   .notice
+/     =flash[:notice]
+/ 
+/ .subject.list
+/   %h2 Subjects
+/   = link_to "Add New Subject", {:action => "new"}, :class => 'action new'
+/   %table.listing{:summary => "Subject list"}
+/     %tr.header
+/       %th  
+/       %th Subject
+/       %th Visible
+/       %th Pages
+/       %th Actions
+/     - @subjects.each do |subject|
+/       %tr
+/         %td=subject.position
+/         %td=subject.name
+/         %td.center #{subject.visible ? 'yes' : 'No'}
+/         %td.center=subject.pages.size
+/         %td.actions
+/           =link_to "Show", {:action => 'show', :id => subject.id}, :class => 'action show'
+/           =link_to "Edit",  {:action => 'edit', :id => subject.id}, :class => 'action edit'
+/           =link_to "Delete", {:action => 'delete', :id => subject.id}, :class => 'action delete'

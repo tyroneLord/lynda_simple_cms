@@ -1,8 +1,8 @@
 = link_to "<< Back to List", "/", :class => 'back-link'
 
-= form_for :subject, :url => {:action => 'create'} do |f|
-  .subject.new
-    %h2 Create Subject
+= form_for :subject, :url => {:action => 'update', :id => @subject.id} do |f|
+  .subject.edit
+    %h2 Update Subject
     %table{:summary => "Subject form fields"}
       %tr
         %th Name
@@ -15,4 +15,3 @@
         %td=f.text_field :visible
     .form-buttons
       = submit_tag "Create Subject"
-  

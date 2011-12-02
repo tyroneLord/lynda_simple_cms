@@ -1,4 +1,8 @@
-= link_to"<< Back to List", {:action => 'list'}, :class => 'back-link'
+-if !flash[:notice].blank?
+  .notice
+    =flash[:notice]
+
+= link_to"/", {:action => 'list'}, :class => 'back-link'
 
 .subject.show
   %h2 Show Subject
