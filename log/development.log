@@ -6005,3 +6005,2112 @@ Started GET "/" for 127.0.0.1 at 2011-12-02 17:16:45 -0600
   [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
 Rendered subjects/list.html.haml within layouts/admin (32.6ms)
 Completed 200 OK in 39ms (Views: 32.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:18:21 -0600
+  Processing by SubjectsController#list as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.5ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/list.html.haml within layouts/admin (58.9ms)
+Completed 200 OK in 81ms (Views: 64.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:22:02 -0600
+  Processing by SubjectsController#list as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/list.html.haml within layouts/admin (52.1ms)
+Completed 200 OK in 58ms (Views: 51.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:23:50 -0600
+  Processing by SubjectsController#list as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/list.html.haml within layouts/admin (33.1ms)
+Completed 200 OK in 56ms (Views: 33.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/subjects/5" for 127.0.0.1 at 2011-12-05 10:23:53 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 5 LIMIT 1[0m
+Rendered subjects/show.html.haml within layouts/admin (12.8ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from require at script/rails:6)
+
+
+Started GET "/subjects/5" for 127.0.0.1 at 2011-12-05 10:24:30 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSQL (21.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 5 LIMIT 1
+Rendered subjects/show.html.haml within layouts/admin (69.6ms)
+Completed 200 OK in 173ms (Views: 71.6ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:24:33 -0600
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/subjects/list" for 127.0.0.1 at 2011-12-05 10:24:39 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"list"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 0 LIMIT 1[0m
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Subject with ID=list):
+  app/controllers/subjects_controller.rb:15:in `show'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 10:24:46 -0600
+
+AbstractController::ActionNotFound (The action 'index' could not be found for SubjectsController):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 10:26:09 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (94.9ms)
+Completed 200 OK in 172ms (Views: 95.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:26:19 -0600
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:26:23 -0600
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:26:24 -0600
+
+ActionController::RoutingError (No route matches "/"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 10:26:33 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (33.9ms)
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/subjects/5" for 127.0.0.1 at 2011-12-05 10:26:37 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 5 LIMIT 1
+Rendered subjects/show.html.haml within layouts/admin (12.9ms)
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 10:26:58 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.4ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (51.1ms)
+Completed 200 OK in 57ms (Views: 50.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 10:26:58 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.4ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.7ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (33.9ms)
+Completed 200 OK in 41ms (Views: 33.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 10:26:59 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (50.3ms)
+Completed 200 OK in 57ms (Views: 50.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 10:27:00 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (51.8ms)
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2011-12-05 10:27:02 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+Rendered subjects/show.html.haml within layouts/admin (12.7ms)
+Completed 200 OK in 20ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2011-12-05 10:29:55 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+Rendered subjects/show.html.haml within layouts/admin (28.6ms)
+Completed 200 OK in 35ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2011-12-05 10:29:56 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+Rendered subjects/show.html.haml within layouts/admin (13.2ms)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2011-12-05 10:29:56 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+Rendered subjects/show.html.haml within layouts/admin (12.7ms)
+Completed 200 OK in 20ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2011-12-05 10:29:56 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1[0m
+Rendered subjects/show.html.haml within layouts/admin (29.0ms)
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2011-12-05 10:29:57 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 3 LIMIT 1
+Rendered subjects/show.html.haml within layouts/admin (13.1ms)
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:29:58 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (49.3ms)
+Completed 200 OK in 55ms (Views: 49.4ms | ActiveRecord: 1.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from require at script/rails:6)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:31:59 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (67.7ms)
+Completed 200 OK in 143ms (Views: 67.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/subjects/7" for 127.0.0.1 at 2011-12-05 10:32:04 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 7 LIMIT 1
+Rendered subjects/show.html.haml within layouts/admin (13.7ms)
+Completed 200 OK in 38ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:32:08 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (49.0ms)
+Completed 200 OK in 56ms (Views: 49.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2011-12-05 10:34:31 -0600
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT `tasks`.* FROM `tasks`[0m
+Rendered tasks/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2011-12-05 10:34:33 -0600
+  Processing by TasksController#new as HTML
+Rendered tasks/_form.html.erb (97.2ms)
+Rendered tasks/new.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 110ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2011-12-05 10:34:35 -0600
+  Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e7JbdVbMmp23AoZPHGMthcLTRqYNYvQPlNs1QQ3xxR0=", "task"=>{"title"=>"adfsg"}, "commit"=>"Create Task"}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mdescribe `tasks`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `tasks` (`title`, `created_at`, `updated_at`) VALUES ('adfsg', '2011-12-05 16:34:35', '2011-12-05 16:34:35')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/tasks/2
+Completed 302 Found in 11ms
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2011-12-05 10:34:35 -0600
+  Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 2 LIMIT 1
+Rendered tasks/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2011-12-05 10:34:38 -0600
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT `tasks`.* FROM `tasks`[0m
+Rendered tasks/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:35:48 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (50.1ms)
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:35:59 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (51.5ms)
+Completed 200 OK in 58ms (Views: 51.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:36:43 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.5ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 5)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (34.1ms)
+Completed 200 OK in 58ms (Views: 34.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/subjects/5" for 127.0.0.1 at 2011-12-05 10:36:47 -0600
+  Processing by SubjectsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e7JbdVbMmp23AoZPHGMthcLTRqYNYvQPlNs1QQ3xxR0=", "id"=>"5"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 5 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM `subjects` WHERE `subjects`.`id` = 5
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 10:36:47 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.4ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (50.7ms)
+Completed 200 OK in 57ms (Views: 51.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 11:20:14 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (50.2ms)
+Completed 200 OK in 56ms (Views: 50.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2011-12-05 11:21:39 -0600
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.2ms)[0m  SELECT `tasks`.* FROM `tasks`
+Rendered tasks/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2011-12-05 11:21:40 -0600
+  Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT `tasks`.* FROM `tasks`[0m
+Rendered tasks/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subject/new" for 127.0.0.1 at 2011-12-05 11:26:20 -0600
+
+ActionController::RoutingError (No route matches "/subject/new"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 11:26:27 -0600
+  Processing by SubjectsController#new as HTML
+Rendered subjects/new.html.haml within layouts/admin (12.6ms)
+Completed 200 OK in 31ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 11:26:31 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (51.0ms)
+Completed 200 OK in 58ms (Views: 51.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/demo/text_helpers" for 127.0.0.1 at 2011-12-05 11:35:19 -0600
+
+ActionController::RoutingError (No route matches "/demo/text_helpers"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/demo/text_helpers" for 127.0.0.1 at 2011-12-05 11:35:38 -0600
+
+ActionController::RoutingError (No route matches "/demo/text_helpers"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from require at script/rails:6)
+
+
+Started GET "/demo/text_helpers" for 127.0.0.1 at 2011-12-05 11:36:07 -0600
+
+ActionController::RoutingError (No route matches "/demo/text_helpers"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/demo/text_helpers" for 127.0.0.1 at 2011-12-05 11:36:09 -0600
+
+ActionController::RoutingError (No route matches "/demo/text_helpers"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2011-12-05 11:36:19 -0600
+
+ActionController::RoutingError (No route matches "/demo/index"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2011-12-05 11:36:52 -0600
+
+ActionController::RoutingError (No route matches "/demo/index"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2011-12-05 11:41:19 -0600
+
+ActionController::RoutingError (No route matches "/text"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/text-helper" for 127.0.0.1 at 2011-12-05 11:41:36 -0600
+
+AbstractController::ActionNotFound (The action 'text-helpers' could not be found for DemoController):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from require at script/rails:6)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 11:41:53 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSQL (20.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (67.9ms)
+Completed 200 OK in 171ms (Views: 68.5ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/text-helper" for 127.0.0.1 at 2011-12-05 11:42:01 -0600
+
+AbstractController::ActionNotFound (The action 'text-helpers' could not be found for DemoController):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/text" for 127.0.0.1 at 2011-12-05 11:42:11 -0600
+
+ActionController::RoutingError (No route matches "/text"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/text-helper" for 127.0.0.1 at 2011-12-05 11:43:23 -0600
+
+AbstractController::ActionNotFound (The action 'text-helpers' could not be found for DemoController):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/text-helpers" for 127.0.0.1 at 2011-12-05 11:43:47 -0600
+
+AbstractController::ActionNotFound (The action 'text-helpers' could not be found for DemoController):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/demo/text-helpers" for 127.0.0.1 at 2011-12-05 11:44:24 -0600
+
+ActionController::RoutingError (No route matches "/demo/text-helpers"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/demo/text-helpers" for 127.0.0.1 at 2011-12-05 11:45:24 -0600
+
+ActionController::RoutingError (No route matches "/demo/text-helpers"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/demo/text-helpers" for 127.0.0.1 at 2011-12-05 11:46:14 -0600
+
+ActionController::RoutingError (No route matches "/demo/text-helpers"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 11:46:27 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (34.4ms)
+Completed 200 OK in 40ms (Views: 34.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/demo/index" for 127.0.0.1 at 2011-12-05 11:46:37 -0600
+
+ActionController::RoutingError (No route matches "/demo/index"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/demo/hello" for 127.0.0.1 at 2011-12-05 11:47:08 -0600
+
+ActionController::RoutingError (No route matches "/demo/hello"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2011-12-05 11:54:55 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (1.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (51.5ms)
+Completed 200 OK in 58ms (Views: 51.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/subjects/1" for 127.0.0.1 at 2011-12-05 11:55:02 -0600
+  Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` = 1 LIMIT 1[0m
+Rendered subjects/show.html.haml within layouts/admin (33.8ms)
+Completed 200 OK in 41ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/text-helpers" for 127.0.0.1 at 2011-12-05 11:55:28 -0600
+
+AbstractController::ActionNotFound (The action 'text-helpers' could not be found for DemoController):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/tasks/text-helpers" for 127.0.0.1 at 2011-12-05 11:57:13 -0600
+  Processing by TasksController#show as HTML
+  Parameters: {"id"=>"text-helpers"}
+  [1m[35mTask Load (0.4ms)[0m  SELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 0 LIMIT 1
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=text-helpers):
+  app/controllers/tasks_controller.rb:16:in `show'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.1ms)
+
+
+Started GET "/text-helpers" for 127.0.0.1 at 2011-12-05 11:57:36 -0600
+
+AbstractController::ActionNotFound (The action 'text-helpers' could not be found for TasksController):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started GET "/text_helpers" for 127.0.0.1 at 2011-12-05 11:58:45 -0600
+  Processing by DemoController#text_helpers as HTML
+Rendered demo/text_helpers.html.haml within layouts/application (84.7ms)
+Completed 200 OK in 88ms (Views: 87.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/text_helpers" for 127.0.0.1 at 2011-12-05 12:01:01 -0600
+  Processing by DemoController#text_helpers as HTML
+Rendered demo/text_helpers.html.haml within layouts/admin (30.1ms)
+Completed 200 OK in 32ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/text_helpers" for 127.0.0.1 at 2011-12-05 12:01:16 -0600
+  Processing by DemoController#text_helpers as HTML
+Rendered demo/text_helpers.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/text_helpers" for 127.0.0.1 at 2011-12-05 12:01:52 -0600
+  Processing by DemoController#text_helpers as HTML
+Rendered demo/text_helpers.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/text_helpers" for 127.0.0.1 at 2011-12-05 12:01:53 -0600
+  Processing by DemoController#text_helpers as HTML
+Rendered demo/text_helpers.html.haml within layouts/application (28.0ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/text_helpers" for 127.0.0.1 at 2011-12-05 12:01:59 -0600
+  Processing by DemoController#text_helpers as HTML
+Rendered demo/text_helpers.html.haml within layouts/admin (12.9ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 12:02:03 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (52.5ms)
+Completed 200 OK in 60ms (Views: 53.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 12:35:37 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (51.0ms)
+Completed 200 OK in 57ms (Views: 51.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 12:35:38 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (49.4ms)
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 12:35:49 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (51.2ms)
+Completed 200 OK in 58ms (Views: 51.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 13:58:54 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.3ms)[0m  [1mSELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC[0m
+  [1m[35mSQL (1.0ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)[0m
+Rendered subjects/index.html.haml within layouts/admin (53.4ms)
+Completed 200 OK in 61ms (Views: 53.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 13:58:57 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[35mSQL (13.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+Rendered subjects/new.html.haml within layouts/admin (13.6ms)
+Completed 200 OK in 101ms (Views: 15.8ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:00:16 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/new.html.haml within layouts/admin (14.3ms)
+Completed 200 OK in 23ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:00:17 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+Rendered subjects/new.html.haml within layouts/admin (13.2ms)
+Completed 200 OK in 85ms (Views: 15.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:00:18 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/new.html.haml within layouts/admin (12.9ms)
+Completed 200 OK in 40ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 14:01:05 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (50.3ms)
+Completed 200 OK in 56ms (Views: 50.8ms | ActiveRecord: 1.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from require at script/rails:6)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 14:01:32 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (68.6ms)
+Completed 200 OK in 155ms (Views: 69.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:01:35 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/new.html.haml within layouts/admin (13.5ms)
+Completed 200 OK in 39ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:01:44 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `subjects`
+Rendered subjects/new.html.haml within layouts/admin (30.7ms)
+Completed 200 OK in 39ms (Views: 32.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:01:50 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/new.html.haml within layouts/admin (30.2ms)
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:03:25 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+ERROR: compiling _app_views_subjects_new_html_haml__1667059387864334903_70365217323320_3312284283708106840 RAISED /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected ':', expecting ')'
+...se((render :partial => "form" :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...partial => "form" :locals{:f => f}
+...                               ^
+Function body:           def _app_views_subjects_new_html_haml__1667059387864334903_70365217323320_3312284283708106840(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "subjects/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( link_to "<< Back to List", "/", :class => 'back-link'
+));}\n", 0, false);
+haml_temp =  form_for :subject, :url => {:action => 'create'} do |f|
+_hamlout.push_text("<div class='subject new'>\n  <h2>Create Subject</h2>\n  #{_hamlout.adjust_tabs(1); 
+
+_hamlout.format_script_false_false_false_true_false_true_false((render :partial => "form" :locals{:f => f}
+));}\n  <!-- %table{:summary => \"Subject form fields\"} -->\n  <!-- %tr -->\n  <!-- %th Name -->\n  <!-- %td=f.text_field :name -->\n  <!-- %tr -->\n  <!-- %th Position -->\n  <!-- %td=f.text_field :position -->\n  <!-- %tr -->\n  <!-- %th Visible -->\n  <!-- %td=f.text_field :visible -->\n  <div class='form-buttons'>\n    #{_hamlout.adjust_tabs(1); 
+
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( submit_tag "Create Subject"
+));}\n  </div>\n</div>\n", -2, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `module_eval'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `compile'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:161:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:54:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:154:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:26:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/tgaylord/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:436:in `_run__2086692047966162792__process_action__435955653664598773__callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:119:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:178:in `block in action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/sass-3.1.11/lib/sass/plugin/rack.rb:54:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+Rendered subjects/new.html.haml within layouts/admin (2.7ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected ':', expecting ')'
+...se((render :partial => "form" :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...partial => "form" :locals{:f => f}
+...                               ^):
+    3: = form_for :subject, :url => {:action => 'create'} do |f|
+    4:   .subject.new
+    5:     %h2 Create Subject
+    6:     =render :partial => "form" :locals{:f => f}
+    7:     / %table{:summary => "Subject form fields"}
+    8:     /       %tr
+    9:     /         %th Name
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:04:03 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+ERROR: compiling _app_views_subjects_new_html_haml__1667059387864334903_70365229871160_3312284283708106840 RAISED /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected ':', expecting ')'
+...e(( render :partial => "form" :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...partial => "form" :locals{:f => f}
+...                               ^
+Function body:           def _app_views_subjects_new_html_haml__1667059387864334903_70365229871160_3312284283708106840(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "subjects/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( link_to "<< Back to List", "/", :class => 'back-link'
+));}\n", 0, false);
+haml_temp =  form_for :subject, :url => {:action => 'create'} do |f|
+_hamlout.push_text("<div class='subject new'>\n  <h2>Create Subject</h2>\n  #{_hamlout.adjust_tabs(1); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( render :partial => "form" :locals{:f => f}
+));}\n  <!-- %table{:summary => \"Subject form fields\"} -->\n  <!-- %tr -->\n  <!-- %th Name -->\n  <!-- %td=f.text_field :name -->\n  <!-- %tr -->\n  <!-- %th Position -->\n  <!-- %td=f.text_field :position -->\n  <!-- %tr -->\n  <!-- %th Visible -->\n  <!-- %td=f.text_field :visible -->\n  <div class='form-buttons'>\n    #{_hamlout.adjust_tabs(1); 
+
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( submit_tag "Create Subject"
+));}\n  </div>\n</div>\n", -2, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `module_eval'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `compile'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:161:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:54:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:154:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:26:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/tgaylord/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:436:in `_run__2086692047966162792__process_action__435955653664598773__callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:119:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:178:in `block in action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/sass-3.1.11/lib/sass/plugin/rack.rb:54:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+Rendered subjects/new.html.haml within layouts/admin (2.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected ':', expecting ')'
+...e(( render :partial => "form" :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...partial => "form" :locals{:f => f}
+...                               ^):
+    3: = form_for :subject, :url => {:action => 'create'} do |f|
+    4:   .subject.new
+    5:     %h2 Create Subject
+    6:     = render :partial => "form" :locals{:f => f}
+    7:     / %table{:summary => "Subject form fields"}
+    8:     /       %tr
+    9:     /         %th Name
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:04:04 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `subjects`
+ERROR: compiling _app_views_subjects_new_html_haml__1667059387864334903_70365235171540_3312284283708106840 RAISED /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected ':', expecting ')'
+...e(( render :partial => "form" :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...partial => "form" :locals{:f => f}
+...                               ^
+Function body:           def _app_views_subjects_new_html_haml__1667059387864334903_70365235171540_3312284283708106840(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "subjects/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( link_to "<< Back to List", "/", :class => 'back-link'
+));}\n", 0, false);
+haml_temp =  form_for :subject, :url => {:action => 'create'} do |f|
+_hamlout.push_text("<div class='subject new'>\n  <h2>Create Subject</h2>\n  #{_hamlout.adjust_tabs(1); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( render :partial => "form" :locals{:f => f}
+));}\n  <!-- %table{:summary => \"Subject form fields\"} -->\n  <!-- %tr -->\n  <!-- %th Name -->\n  <!-- %td=f.text_field :name -->\n  <!-- %tr -->\n  <!-- %th Position -->\n  <!-- %td=f.text_field :position -->\n  <!-- %tr -->\n  <!-- %th Visible -->\n  <!-- %td=f.text_field :visible -->\n  <div class='form-buttons'>\n    #{_hamlout.adjust_tabs(1); 
+
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( submit_tag "Create Subject"
+));}\n  </div>\n</div>\n", -2, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `module_eval'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `compile'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:161:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:54:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:154:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:26:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/tgaylord/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:436:in `_run__2086692047966162792__process_action__435955653664598773__callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:119:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:178:in `block in action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/sass-3.1.11/lib/sass/plugin/rack.rb:54:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+Rendered subjects/new.html.haml within layouts/admin (2.3ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected ':', expecting ')'
+...e(( render :partial => "form" :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected tASSOC, expecting '}'
+...partial => "form" :locals{:f => f}
+...                               ^):
+    3: = form_for :subject, :url => {:action => 'create'} do |f|
+    4:   .subject.new
+    5:     %h2 Create Subject
+    6:     = render :partial => "form" :locals{:f => f}
+    7:     / %table{:summary => "Subject form fields"}
+    8:     /       %tr
+    9:     /         %th Name
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:04:45 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+ERROR: compiling _app_views_subjects_new_html_haml__1667059387864334903_70365209938780_3312284283708106840 RAISED /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected '{', expecting tASSOC
+...er :partial => "form", :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:7: unknown type of %string
+));}\n  <!-- %table{:summary => \"Subject for...
+                ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:7: syntax error, unexpected $end
+));}\n  <!-- %table{:summary => \"Subject for...
+                ^
+Function body:           def _app_views_subjects_new_html_haml__1667059387864334903_70365209938780_3312284283708106840(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "subjects/new";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("#{_hamlout.format_script_false_false_false_true_false_true_false(( link_to "<< Back to List", "/", :class => 'back-link'
+));}\n", 0, false);
+haml_temp =  form_for :subject, :url => {:action => 'create'} do |f|
+_hamlout.push_text("<div class='subject new'>\n  <h2>Create Subject</h2>\n  #{_hamlout.adjust_tabs(1); 
+
+_hamlout.format_script_false_false_false_true_false_true_false(( render :partial => "form", :locals{:f => f}
+));}\n  <!-- %table{:summary => \"Subject form fields\"} -->\n  <!-- %tr -->\n  <!-- %th Name -->\n  <!-- %td=f.text_field :name -->\n  <!-- %tr -->\n  <!-- %th Position -->\n  <!-- %td=f.text_field :position -->\n  <!-- %tr -->\n  <!-- %th Visible -->\n  <!-- %td=f.text_field :visible -->\n  <div class='form-buttons'>\n    #{_hamlout.adjust_tabs(1); 
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.format_script_false_false_false_true_false_true_false(( submit_tag "Create Subject"
+));}\n  </div>\n</div>\n", -2, false);end
+_hamlout.buffer << _hamlout.format_script_false_false_false_true_false_false_false(haml_temp);_hamlout.push_text("\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `module_eval'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `compile'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:161:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:54:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:154:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:26:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/tgaylord/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:436:in `_run__2086692047966162792__process_action__435955653664598773__callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:119:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:178:in `block in action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:82:in `optimized_each'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/sass-3.1.11/lib/sass/plugin/rack.rb:54:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+Rendered subjects/new.html.haml within layouts/admin (2.7ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:6: syntax error, unexpected '{', expecting tASSOC
+...er :partial => "form", :locals{:f => f}
+...                               ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:7: unknown type of %string
+));}\n  <!-- %table{:summary => \"Subject for...
+                ^
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/subjects/new.html.haml:7: syntax error, unexpected $end
+));}\n  <!-- %table{:summary => \"Subject for...
+                ^):
+    3: = form_for :subject, :url => {:action => 'create'} do |f|
+    4:   .subject.new
+    5:     %h2 Create Subject
+    6:     = render :partial => "form", :locals{:f => f}
+    7:     
+    8:     / %table{:summary => "Subject form fields"}
+    9:     /       %tr
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:05:18 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+Rendered subjects/_form.html.haml (6.6ms)
+Rendered subjects/new.html.haml within layouts/admin (32.7ms)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:05:35 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/_form.html.haml (5.9ms)
+Rendered subjects/new.html.haml within layouts/admin (15.9ms)
+Completed 200 OK in 25ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:09:49 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+Rendered subjects/_form.html.haml (55.8ms)
+Rendered subjects/new.html.haml within layouts/admin (66.1ms)
+Completed 200 OK in 75ms (Views: 68.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2011-12-05 14:17:06 -0600
+  Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e7JbdVbMmp23AoZPHGMthcLTRqYNYvQPlNs1QQ3xxR0=", "subject"=>{"name"=>"", "position"=>"7", "visible"=>"0", "created_at(1i)"=>"2011", "created_at(2i)"=>"12", "created_at(3i)"=>"5", "created_at(4i)"=>"20", "created_at(5i)"=>"09"}, "commit"=>"Create Subject"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/_form.html.haml (6.5ms)
+Rendered subjects/new.html.haml within layouts/admin (36.8ms)
+Completed 200 OK in 53ms (Views: 39.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-05 14:17:10 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.5ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (54.3ms)
+Completed 200 OK in 62ms (Views: 54.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/subjects/new" for 127.0.0.1 at 2011-12-05 14:17:12 -0600
+  Processing by SubjectsController#new as HTML
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/_form.html.haml (30.2ms)
+Rendered subjects/new.html.haml within layouts/admin (40.9ms)
+Completed 200 OK in 50ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2011-12-05 14:17:18 -0600
+  Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e7JbdVbMmp23AoZPHGMthcLTRqYNYvQPlNs1QQ3xxR0=", "subject"=>{"name"=>"", "position"=>"1", "visible"=>"0", "created_at(1i)"=>"2011", "created_at(2i)"=>"12", "created_at(3i)"=>"5", "created_at(4i)"=>"20", "created_at(5i)"=>"17"}, "commit"=>"Create Subject"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+Rendered subjects/_form.html.haml (8.7ms)
+Rendered subjects/new.html.haml within layouts/admin (36.8ms)
+Completed 200 OK in 52ms (Views: 38.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2011-12-05 14:20:21 -0600
+  Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e7JbdVbMmp23AoZPHGMthcLTRqYNYvQPlNs1QQ3xxR0=", "subject"=>{"name"=>"", "position"=>"1", "visible"=>"0", "created_at(1i)"=>"2011", "created_at(2i)"=>"12", "created_at(3i)"=>"5", "created_at(4i)"=>"20", "created_at(5i)"=>"17"}, "commit"=>"Create Subject"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/_form.html.haml (7.1ms)
+Rendered subjects/new.html.haml within layouts/admin (17.7ms)
+Completed 200 OK in 50ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2011-12-05 14:20:22 -0600
+  Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e7JbdVbMmp23AoZPHGMthcLTRqYNYvQPlNs1QQ3xxR0=", "subject"=>{"name"=>"", "position"=>"1", "visible"=>"0", "created_at(1i)"=>"2011", "created_at(2i)"=>"12", "created_at(3i)"=>"5", "created_at(4i)"=>"20", "created_at(5i)"=>"17"}, "commit"=>"Create Subject"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `subjects`
+Rendered subjects/_form.html.haml (6.9ms)
+Rendered subjects/new.html.haml within layouts/admin (17.0ms)
+Completed 200 OK in 49ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/subjects" for 127.0.0.1 at 2011-12-05 14:20:31 -0600
+  Processing by SubjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e7JbdVbMmp23AoZPHGMthcLTRqYNYvQPlNs1QQ3xxR0=", "subject"=>{"name"=>"", "position"=>"1", "visible"=>"0", "created_at(1i)"=>"2011", "created_at(2i)"=>"12", "created_at(3i)"=>"5", "created_at(4i)"=>"20", "created_at(5i)"=>"17"}, "commit"=>"Create Subject"}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `subjects`[0m
+Rendered subjects/_form.html.haml (6.7ms)
+Rendered subjects/new.html.haml within layouts/admin (17.1ms)
+Completed 200 OK in 31ms (Views: 19.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/demo/escape_output" for 127.0.0.1 at 2011-12-05 14:55:53 -0600
+
+ActionController::RoutingError (No route matches "/demo/escape_output"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 14:56:01 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (Illegal nesting: nesting within a self-closing tag is illegal.):
+    4: %br/
+    5: = good_string
+    6: %br/
+    7:   %br/
+    8:   %br/
+    9:   = evil_string.html_safe?
+    10:   %br/
+  app/views/demo/escape_output.html.haml:7
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.4ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.5ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 14:56:24 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (41.7ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 14:56:38 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (10.8ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 14:58:15 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (25.5ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 15:03:19 -0600
+  Processing by DemoController#escape_output as HTML
+ERROR: compiling _app_views_demo_escape_output_html_haml___1687953954316321777_70365212020820_3312284283708106840 RAISED /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _app_views_demo_escape_output_html_haml___1687953954316321777_70365212020820_3312284283708106840(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "demo/escape_output";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;; evil_string = "<script>alert('Gotcha!');</script>"
+ good_string = "<strong>Welcome to my site!</strong>"
+_hamlout.push_text("#{
+_hamlout.format_script_false_false_false_true_false_true_false(( :raw evil_string
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( :raw good_string
+));}\n<!-- = evil_string -->\n<!-- %br/ -->\n<!-- = good_string -->\n<!-- %br/ -->\n<!-- %br/ -->\n<!-- %br/ -->\n<!-- = evil_string.html_safe? -->\n<!-- %br/ -->\n<!-- = good_string.html_safe? -->\n<!-- %br/ -->\n<!-- %hr/ -->\n<!-- - simple_string = '<strong>Please</strong> visit <a href=\"http://example.com\">us</a>.'.html_safe -->\n<!-- = strip_links(simple_string) -->\n<!-- %br/ -->\n<!-- = strip_tags(simple_string) -->\n<!-- %br/ -->\n<!-- %hr/ -->\n<!-- = sanitize(evil_string) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string, :tags => []) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string, :tags => ['strong']) -->\n<!-- %br/ -->\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `module_eval'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `compile'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:161:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:54:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:154:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:26:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/tgaylord/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:436:in `_run__1325583354461832636__process_action__1288694944329216498__callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:119:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:178:in `block in action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/sass-3.1.11/lib/sass/plugin/rack.rb:54:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+Rendered demo/escape_output.html.haml within layouts/admin (2.6ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'):
+    1: - evil_string = "<script>alert('Gotcha!');</script>"
+    2: - good_string = "<strong>Welcome to my site!</strong>"
+    3: 
+    4: = :raw evil_string 
+    5: %br/
+    6: = :raw good_string
+    7: / = evil_string
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 15:03:37 -0600
+  Processing by DemoController#escape_output as HTML
+ERROR: compiling _app_views_demo_escape_output_html_haml___1687953954316321777_70365229665340_3312284283708106840 RAISED /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _app_views_demo_escape_output_html_haml___1687953954316321777_70365229665340_3312284283708106840(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "demo/escape_output";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;; evil_string = "<script>alert('Gotcha!');</script>"
+ good_string = "<strong>Welcome to my site!</strong>"
+_hamlout.push_text("#{
+_hamlout.format_script_false_false_false_true_false_true_false(( :raw evil_string
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( :raw good_string
+));}\n<!-- = evil_string -->\n<!-- %br/ -->\n<!-- = good_string -->\n<!-- %br/ -->\n<!-- %br/ -->\n<!-- %br/ -->\n<!-- = evil_string.html_safe? -->\n<!-- %br/ -->\n<!-- = good_string.html_safe? -->\n<!-- %br/ -->\n<!-- %hr/ -->\n<!-- - simple_string = '<strong>Please</strong> visit <a href=\"http://example.com\">us</a>.'.html_safe -->\n<!-- = strip_links(simple_string) -->\n<!-- %br/ -->\n<!-- = strip_tags(simple_string) -->\n<!-- %br/ -->\n<!-- %hr/ -->\n<!-- = sanitize(evil_string) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string, :tags => []) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string, :tags => ['strong']) -->\n<!-- %br/ -->\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `module_eval'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `compile'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:161:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:54:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:154:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:26:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/tgaylord/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:436:in `_run__1325583354461832636__process_action__1288694944329216498__callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:119:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:178:in `block in action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/sass-3.1.11/lib/sass/plugin/rack.rb:54:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+Rendered demo/escape_output.html.haml within layouts/admin (2.8ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'):
+    1: - evil_string = "<script>alert('Gotcha!');</script>"
+    2: - good_string = "<strong>Welcome to my site!</strong>"
+    3: 
+    4: = :raw evil_string 
+    5: %br/
+    6: = :raw good_string
+    7: / = evil_string
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 15:03:39 -0600
+  Processing by DemoController#escape_output as HTML
+ERROR: compiling _app_views_demo_escape_output_html_haml___1687953954316321777_70365209429280_3312284283708106840 RAISED /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _app_views_demo_escape_output_html_haml___1687953954316321777_70365209429280_3312284283708106840(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "demo/escape_output";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;; evil_string = "<script>alert('Gotcha!');</script>"
+ good_string = "<strong>Welcome to my site!</strong>"
+_hamlout.push_text("#{
+_hamlout.format_script_false_false_false_true_false_true_false(( :raw evil_string
+));}\n<br>\n#{
+_hamlout.format_script_false_false_false_true_false_true_false(( :raw good_string
+));}\n<!-- = evil_string -->\n<!-- %br/ -->\n<!-- = good_string -->\n<!-- %br/ -->\n<!-- %br/ -->\n<!-- %br/ -->\n<!-- = evil_string.html_safe? -->\n<!-- %br/ -->\n<!-- = good_string.html_safe? -->\n<!-- %br/ -->\n<!-- %hr/ -->\n<!-- - simple_string = '<strong>Please</strong> visit <a href=\"http://example.com\">us</a>.'.html_safe -->\n<!-- = strip_links(simple_string) -->\n<!-- %br/ -->\n<!-- = strip_tags(simple_string) -->\n<!-- %br/ -->\n<!-- %hr/ -->\n<!-- = sanitize(evil_string) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string, :tags => []) -->\n<!-- %br/ -->\n<!-- = sanitize(simple_string, :tags => ['strong']) -->\n<!-- %br/ -->\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `module_eval'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:285:in `compile'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:161:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:54:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/template.rb:154:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_view/render/rendering.rb:26:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/haml-3.1.4/lib/haml/helpers/action_view_mods.rb:13:in `render_with_haml'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:115:in `_render_template'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:93:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/tgaylord/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:150:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:436:in `_run__1325583354461832636__process_action__1288694944329216498__callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:410:in `_run_process_action_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:94:in `run_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/notifications.rb:52:in `instrument'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/base.rb:119:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/abstract_controller/rendering.rb:41:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_controller/metal.rb:178:in `block in action'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/routing/route_set.rb:493:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/sass-3.1.11/lib/sass/plugin/rack.rb:54:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/methodoverride.rb:24:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:12:in `cache'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/query_cache.rb:31:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activerecord-3.0.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/sendfile.rb:106:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/logger.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/runtime.rb:17:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/activesupport-3.0.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/lock.rb:11:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:168:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/application.rb:77:in `method_missing'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/content_length.rb:13:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/chunked.rb:15:in `call'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:80:in `block in pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `catch'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:78:in `pre_process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:53:in `process'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/connection.rb:38:in `receive_data'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/backends/base.rb:61:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/thin-1.3.1/lib/thin/server.rb:159:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/handler/thin.rb:14:in `run'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/rack-1.2.4/lib/rack/server.rb:217:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands/server.rb:65:in `start'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:30:in `block in <top (required)>'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `tap'
+/Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/railties-3.0.11/lib/rails/commands.rb:27:in `<top (required)>'
+script/rails:6:in `require'
+script/rails:6:in `<main>'
+Rendered demo/escape_output.html.haml within layouts/admin (2.7ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+/Users/tgaylord/tukaiz/lynda_work/ch7/app/views/demo/escape_output.html.haml:6: syntax error, unexpected tIDENTIFIER, expecting ')'):
+    1: - evil_string = "<script>alert('Gotcha!');</script>"
+    2: - good_string = "<strong>Welcome to my site!</strong>"
+    3: 
+    4: = :raw evil_string 
+    5: %br/
+    6: = :raw good_string
+    7: / = evil_string
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 15:04:44 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (8.7ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 15:06:13 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (8.0ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 15:09:26 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (24.6ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/escape_output" for 127.0.0.1 at 2011-12-05 15:11:47 -0600
+  Processing by DemoController#escape_output as HTML
+Rendered demo/escape_output.html.haml within layouts/admin (9.2ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users`[0m
+  [1m[35mSQL (28.0ms)[0m  SHOW TABLES
+  [1m[36mAdminUser Load (0.5ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `admin_users` SET `hashed_password` = '836bc145be137f13e8814559ececf92b303893a9', `updated_at` = '2011-12-05 22:53:47' WHERE `admin_users`.`id` = 1[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE `admin_users` SET `username` = 'tyrone_lord', `updated_at` = '2011-12-05 23:13:59' WHERE `admin_users`.`id` = 1
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `admin_users` SET `salt` = 'c267aed1d5c975297a72ecf2ab24e927b62c1cf4', `hashed_password` = 'db9751e368e2548efca8aa8eadb50740699aeea9', `updated_at` = '2011-12-05 23:17:54' WHERE `admin_users`.`id` = 1
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m

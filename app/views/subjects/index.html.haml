@@ -14,7 +14,7 @@
       %tr
         %td=subject.position
         %td=subject.name
-        %td.center #{subject.visible ? 'yes' : 'No'}
+        %td.center #{status_tag(subject.visible)}
         %td.center=subject.pages.size
         %td.actions
           =link_to "Show", subject_path(subject), :class => 'action show'

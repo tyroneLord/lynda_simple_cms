@@ -1,14 +1,16 @@
 class SubjectsController < ApplicationController
+  
+ 
   layout 'admin'
   # def index
   #   list
   #   render('list')
   # end
   
-  def list
-    #this is for READ part of CRUD
+  def index
     @subjects = Subject.order("subjects.position ASC")
   end
+
   
   def show
     #this is for READ part of CRUD
@@ -18,6 +20,7 @@ class SubjectsController < ApplicationController
   def new
     # THIS THE CREATE PART OF CRUD
     @subject = Subject.new
+    @subject_count = Subject.count + 1
   end
   
   def create
@@ -31,6 +34,7 @@ class SubjectsController < ApplicationController
       redirect_to(:action => 'list')
     else
       #if it doesnt go back to new action
+      @subject_count = Subject.count + 1
       render('new')
     end
   end
@@ -38,6 +42,7 @@ class SubjectsController < ApplicationController
   def edit
     # THIS THE UPDATE PART OF CRUD
     @subject = Subject.find(params[:id])
+    @subject_count = Subject.count
   end
   
   def update
@@ -52,6 +57,7 @@ class SubjectsController < ApplicationController
     else
       #if it doesnt go back to new action
       render('edit')
+      @subject_count = Subject.count
     end
   end
   

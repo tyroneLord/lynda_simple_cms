@@ -8,4 +8,7 @@ class Page < ActiveRecord::Base
   belongs_to :subject # many to many
   has_many :sections #many to many
   
+  validates_presence_of :name, :message => "hell nawl"
+  validates_length_of :name, :maximum => 255
+  
 end

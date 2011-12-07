@@ -1,8 +1,13 @@
 SimpleCms::Application.routes.draw do
+  
+  root :to => 'subjects#index'
+
   resources :tasks
 
   resources :subjects
-  match 'subjects/list' => 'subjects#list', :as => "list"
+  match "escape_output" => "demo#escape_output", :as => :escape_output
+  match "text_helpers" => "demo#text_helpers", :as => :text
+  # match 'subjects/list' => 'subjects#list', :as => "list"
   
   # root :to => "demo#index"
   
@@ -58,7 +63,6 @@ SimpleCms::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
-  root :to => "subjects#list", :as => "list"
 
   # See how all your routes lay out with "rake routes"
 
