@@ -2,8 +2,10 @@
 / <p>Find me in app/views/acess/login.html.erb</p>
 
 - @page_title = "Admin Login"
+%h1=params.inspect
+%h1=session
 .login
-  = form_tag(acess_login_path) do
+  = form_tag(acess_attempt_login_path) do
     %table
       %tr
         %td= label_tag(:username)
@@ -14,3 +16,4 @@
       %tr
         %td  
         %td= submit_tag("Log In")
+        
