@@ -1,0 +1,16 @@
+/ <h1>Acess#login</h1>
+/ <p>Find me in app/views/acess/login.html.erb</p>
+
+- @page_title = "Admin Login"
+.login
+  = form_tag(acess_login_path) do
+    %table
+      %tr
+        %td= label_tag(:username)
+        %td= text_field_tag(:username)
+      %tr
+        %td= label_tag(:password)
+        %td= password_field_tag(:password)
+      %tr
+        %td  
+        %td= submit_tag("Log In")

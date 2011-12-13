@@ -31,7 +31,7 @@ class SubjectsController < ApplicationController
     if @subject.save
       #this is if statement for if the form saves
       flash[:notice] = "You have created a new object"
-      redirect_to(:action => 'list')
+      redirect_to(subjects_path)
     else
       #if it doesnt go back to new action
       @subject_count = Subject.count + 1
@@ -53,7 +53,7 @@ class SubjectsController < ApplicationController
     if @subject.update_attributes(params[:subject])
       #this is if statement for if the form saves
       flash[:notice] = "You have updated a new object"
-      redirect_to(:action => 'show', :id => @subject.id)
+      redirect_to(subject_path, :id => @subject.id)
     else
       #if it doesnt go back to new action
       render('edit')
@@ -75,7 +75,7 @@ class SubjectsController < ApplicationController
     @subject.destroy
 
     respond_to do |format|
-      format.html { redirect_to(list_url) }
+      format.html { redirect_to(subjects_path) }
       format.xml  
     end
   end

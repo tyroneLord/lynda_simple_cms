@@ -1,5 +1,11 @@
 SimpleCms::Application.routes.draw do
   
+  get "acess/menu"
+
+  get "acess/login"
+  
+  match 'admin', :to => 'acess#index'
+
   root :to => 'subjects#index'
 
   resources :tasks
