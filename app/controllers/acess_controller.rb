@@ -1,4 +1,5 @@
 class AcessController < ApplicationController
+  layout 'admin'
   
   def index
   end
@@ -13,7 +14,7 @@ class AcessController < ApplicationController
     @authorized_user = AdminUser.authenticate(params[:username], params[:password])
       if @authorized_user
         flash[:notice] = "thank you for logging in"
-        redirect_to(acess_menu_path)
+        redirect_to(admin_path)
       else
         flash[:notice] = "fuck you"
         render "login"
