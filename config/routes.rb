@@ -5,16 +5,18 @@ SimpleCms::Application.routes.draw do
   
   get "acess/menu"
   
+  get "acess/logout", :as => :logout
   
   match 'admin', :to => 'acess#index'
 
   root :to => 'subjects#index'
 
   resources :tasks
+  resources :admin_users
 
   resources :subjects
-  # match "escape_output" => "demo#escape_output", :as => :escape_output
-  # match "text_helpers" => "demo#text_helpers", :as => :text
+  match "escape_output" => "demo#escape_output", :as => :escape_output
+  match "text_helpers" => "demo#text_helpers", :as => :text
   # match 'subjects/list' => 'subjects#list', :as => "list"
   
   # root :to => "demo#index"
