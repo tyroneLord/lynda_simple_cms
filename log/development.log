@@ -10139,3 +10139,11 @@ Started GET "/admin" for 127.0.0.1 at 2011-12-13 17:44:45 -0600
   Processing by AcessController#index as HTML
 Rendered acess/index.html.haml within layouts/admin (7.6ms)
 Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-12-13 17:55:49 -0600
+  Processing by AcessController#index as HTML
+Rendered acess/index.html.haml within layouts/admin (8.7ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (24.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
