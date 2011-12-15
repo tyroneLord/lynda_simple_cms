@@ -12,6 +12,7 @@ SimpleCms::Application.routes.draw do
   root :to => 'subjects#index'
 
   resources :tasks
+  resources :admin_users
 
   resources :subjects
   match "escape_output" => "demo#escape_output", :as => :escape_output

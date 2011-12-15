@@ -6,6 +6,7 @@ class AdminUser < ActiveRecord::Base
   has_many :pages, through: :admin_user_pages
   has_many :section_edits
   has_many :sections, through: :section_edits
+  scope :sorted, order("admin_users.last_name ASC")
   scope :named, lambda {|first, last| where(:first_name => first, :last_name => last)}
   # TO USE THE ABOVE SCOPE WE WOULD DO THIS IN CONSOLE 
   # AdminUser.name("tyrone", "gaylord")
@@ -38,6 +39,10 @@ class AdminUser < ActiveRecord::Base
     # def self.hash(password="")
     #   Digest::SHA1.hexdigest(password)
     # end
+    
+    def name 
+      "#{first_name} #{last_name}"
+    end
   
   private
     
