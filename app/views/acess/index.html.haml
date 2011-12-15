@@ -1,10 +1,10 @@
 - @page_title = "Admin Menu"
 .menu
   %h2 Admin Menu
-  .identity Logged in as:
+  .identity Logged in as: #{session[:username]}
   %ul
     %li= link_to("Manage Subjects", "#")
     %li= link_to("Manage Pages","#")
     %li= link_to("Manage Sections", "#")
     %li= link_to("Manage Admin Users", '#')
-    %li= link_to("Logout", "#")
+    %li= link_to("Logout", logout_path)
