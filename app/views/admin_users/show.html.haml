@@ -1,0 +1,16 @@
+- @page_title = "Tyrone's Site"
+
+= link_to "Back To List", admin_users_path, :class => 'back-link'
+
+.subject.show
+  %h2 Show Subject
+  %table{:summary => "Subject detail view"}
+    %tr
+      %th First Name
+      %td=@admin_user.first_name
+    %tr
+      %th Position
+      %td=@admin_user.last_name
+    %tr
+      %th password
+      %td

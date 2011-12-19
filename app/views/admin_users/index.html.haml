@@ -1,2 +1,45 @@
-- @admin_users.each do |admin|
-	%p= admin.first_name
+.admin_user.list
+  %h2 Admin Users
+  %table.listing
+    %tr.header
+      %th First Name
+      %th Last Name
+      %th username
+      %th password
+    - @admin_users.each do |admin|
+      %tr.header
+        %td= admin.first_name
+        %td= admin.last_name
+        %td= admin.username
+        %td password
+        %td.actions
+          =link_to "Create", new_admin_user_path
+          =link_to "Show", admin_user_path(admin.id), :class => 'action show'
+          =link_to "Edit", edit_admin_user_path(admin.id), :class => 'action edit'
+          =link_to "Delete", admin, :confirm => 'Are you sure', :method => :delete
+        
+  
+/ 
+/ - @page_title = "Tyrone's Site"
+/ 
+/ .subject.list
+/   %h2 Subjects
+/   = link_to "Add New Subject", new_subject_path, :class => 'action new'
+/   %table.listing{:summary => "Subject list"}
+/     %tr.header
+/       %th  
+/       %th Subject
+/       %th Visible
+/       %th Pages
+/       %th Actions
+/     - @subjects.each do |subject|
+/       %tr
+/         %td=subject.position
+/         %td=subject.name
+/         %td.center #{status_tag(subject.visible)}
+/         %td.center=subject.pages.size
+/         %td.actions
+/           =link_to "Show", subject_path(subject), :class => 'action show'
+/           =link_to "Edit", edit_subject_path(subject.id), :class => 'action edit'
+/           =link_to "Delete", subject, :confirm => 'Are you sure', :method => :delete
+  

@@ -10422,3 +10422,676 @@ Started GET "/acess/login" for 127.0.0.1 at 2011-12-15 00:35:15 -0600
   Processing by AcessController#login as HTML
 Rendered acess/login.html.haml within layouts/admin (40.4ms)
 Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from require at script/rails:6)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-16 10:07:06 -0600
+  Processing by SubjectsController#index as HTML
+Redirected to http://localhost:3000/acess/login
+Completed 302 Found in 0ms
+
+
+Started GET "/acess/login" for 127.0.0.1 at 2011-12-16 10:07:06 -0600
+  Processing by AcessController#login as HTML
+Rendered acess/login.html.haml within layouts/admin (9.2ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/acess/attempt_login" for 127.0.0.1 at 2011-12-16 10:07:18 -0600
+  Processing by AcessController#attempt_login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "username"=>"tyrone_lord", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[36mSQL (27.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`username` = 'tyrone_lord' LIMIT 1
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 140ms
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-12-16 10:07:18 -0600
+  Processing by AcessController#index as HTML
+Rendered acess/index.html.haml within layouts/admin (25.5ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2011-12-16 10:08:43 -0600
+  Processing by AcessController#index as HTML
+Rendered acess/index.html.haml within layouts/admin (8.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 10:08:45 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (13.2ms)
+Completed 200 OK in 25ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `admin_users` SET `first_name` = 'Alicia', `updated_at` = '2011-12-16 16:10:21' WHERE `admin_users`.`id` = 2
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 10:10:25 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC
+Rendered admin_users/index.html.haml within layouts/admin (13.3ms)
+Completed 200 OK in 41ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 11:53:27 -0600
+
+SyntaxError (/Users/tgaylord/tukaiz/lynda_work/ch7/app/controllers/admin_users_controller.rb:69: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.9ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.1ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 11:55:33 -0600
+  Processing by AdminUsersController#index as HTML
+Rendered admin_users/index.html.haml within layouts/admin (0.9ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (Inconsistent indentation: "    \t" was used for indentation, but the rest of the document was indented using 2 spaces.):
+    7:       %th username
+    8:       %th password
+    9:     - @admin_users.each do |admin|
+    10:     	%td= admin.first_name
+    11:     	%td= admin.last_name
+    12:     	%td= admin.user_name
+    13:     	%td password
+  app/views/admin_users/index.html.haml:10
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (11.2ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.6ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 11:56:06 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC
+Rendered admin_users/index.html.haml within layouts/admin (11.4ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `user_name' for #<AdminUser:0x007fcff1785a50>):
+    9:     - @admin_users.each do |admin|
+    10:       %td= admin.first_name
+    11:       %td= admin.last_name
+    12:       %td= admin.user_name
+    13:       %td password
+    14:       %td.actions
+    15:         =link_to "Create", new_admin_user_path
+  app/views/admin_users/index.html.haml:12:in `block in _app_views_admin_users_index_html_haml__2831528214667153894_70265557213980_120140869276881284'
+  app/views/admin_users/index.html.haml:9:in `_app_views_admin_users_index_html_haml__2831528214667153894_70265557213980_120140869276881284'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.7ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 11:57:04 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (34.5ms)
+Completed 200 OK in 46ms (Views: 36.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 11:57:57 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC
+Rendered admin_users/index.html.haml within layouts/admin (36.5ms)
+Completed 200 OK in 48ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users/2" for 127.0.0.1 at 2011-12-16 11:58:10 -0600
+  Processing by AdminUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSQL (24.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 2 LIMIT 1
+Rendered admin_users/show.html.haml within layouts/admin (14.7ms)
+Completed 200 OK in 70ms (Views: 16.9ms | ActiveRecord: 25.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 2 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `admin_users` SET `last_name` = 'gaylord', `updated_at` = '2011-12-16 17:59:29' WHERE `admin_users`.`id` = 2
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mUPDATE `admin_users` SET `username` = 'lici', `updated_at` = '2011-12-16 18:00:03' WHERE `admin_users`.`id` = 2[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:00:05 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (18.4ms)
+Completed 200 OK in 47ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users/1" for 127.0.0.1 at 2011-12-16 12:00:23 -0600
+  Processing by AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.8ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered admin_users/show.html.haml within layouts/admin (15.2ms)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin_users/2" for 127.0.0.1 at 2011-12-16 12:00:27 -0600
+  Processing by AdminUsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 2 LIMIT 1[0m
+Rendered admin_users/show.html.haml within layouts/admin (15.0ms)
+Completed 200 OK in 28ms (Views: 16.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-16 12:00:33 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (87.2ms)
+Completed 200 OK in 112ms (Views: 88.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:01:16 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (19.1ms)
+Completed 200 OK in 47ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users/1" for 127.0.0.1 at 2011-12-16 12:01:20 -0600
+  Processing by AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered admin_users/show.html.haml within layouts/admin (15.2ms)
+Completed 200 OK in 29ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:01:21 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (35.4ms)
+Completed 200 OK in 47ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:01:28 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.8ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from block in _app_views_admin_users__form_html_haml__1246903527119445700_70265547606760__2739696386253333433 at /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/admin_users/_form.html.haml:2)
+Rendered admin_users/_form.html.haml (245.1ms)
+Rendered admin_users/edit.html.haml within layouts/admin (247.3ms)
+Completed 500 Internal Server Error in 262ms
+
+ActionView::Template::Error (undefined method `password' for #<SimpleForm::FormBuilder:0x007fcff34d9778>):
+    3:   = f.input :first_name
+    4:   = f.input :last_name
+    5:   = f.input :username
+    6:   = f.password :hashed_password
+    7:   = f.button :submit
+    8:   
+  app/views/admin_users/_form.html.haml:6:in `block in _app_views_admin_users__form_html_haml__1246903527119445700_70265547606760__2739696386253333433'
+  app/views/admin_users/_form.html.haml:1:in `_app_views_admin_users__form_html_haml__1246903527119445700_70265547606760__2739696386253333433'
+  app/views/admin_users/edit.html.haml:1:in `_app_views_admin_users_edit_html_haml__1947138358334746731_70265548028580_120140869276881284'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.8ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.6ms)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:01:55 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from block in _app_views_admin_users__form_html_haml__1246903527119445700_70265547812620__2739696386253333433 at /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/admin_users/_form.html.haml:2)
+Rendered admin_users/_form.html.haml (34.3ms)
+Rendered admin_users/edit.html.haml within layouts/admin (41.4ms)
+Completed 200 OK in 56ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:06:24 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered admin_users/_form.html.haml (18.9ms)
+Rendered admin_users/edit.html.haml within layouts/admin (26.5ms)
+Completed 200 OK in 58ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:06:29 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+DEPRECATION WARNING: f.error_messages was removed from Rails and is now available as a plugin. Please install it with `rails plugin install git://github.com/rails/dynamic_form.git`. (called from block in _app_views_admin_users__form_html_haml__1246903527119445700_70265557303560__2739696386253333433 at /Users/tgaylord/tukaiz/lynda_work/ch7/app/views/admin_users/_form.html.haml:2)
+Rendered admin_users/_form.html.haml (18.7ms)
+Rendered admin_users/edit.html.haml within layouts/admin (44.1ms)
+Completed 200 OK in 58ms (Views: 46.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:06:49 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.7ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered admin_users/_form.html.haml (35.6ms)
+Rendered admin_users/edit.html.haml within layouts/admin (43.4ms)
+Completed 200 OK in 58ms (Views: 45.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin_users/1" for 127.0.0.1 at 2011-12-16 12:07:04 -0600
+  Processing by AdminUsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"ty", "last_name"=>"gaylord", "username"=>"tyrone_lord"}, "commit"=>"Update Admin user", "id"=>"1"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mUPDATE `admin_users` SET `first_name` = 'ty', `updated_at` = '2011-12-16 18:07:04' WHERE `admin_users`.`id` = 1[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin_users/1
+Completed 302 Found in 40ms
+
+
+Started GET "/admin_users/1" for 127.0.0.1 at 2011-12-16 12:07:04 -0600
+  Processing by AdminUsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+Rendered admin_users/show.html.haml within layouts/admin (14.7ms)
+Completed 200 OK in 45ms (Views: 16.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:07:10 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC
+Rendered admin_users/index.html.haml within layouts/admin (18.8ms)
+Completed 200 OK in 48ms (Views: 21.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:09:45 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.2ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (34.6ms)
+Completed 200 OK in 46ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:09:48 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered admin_users/_form.html.haml (39.5ms)
+Rendered admin_users/edit.html.haml within layouts/admin (41.3ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined method `password' for #<SimpleForm::FormBuilder:0x007fcff3994380>):
+    2:   = f.input :first_name
+    3:   = f.input :last_name
+    4:   = f.input :username
+    5:   = f.password :hashed_password
+    6:   = f.button :submit
+    7:   
+  app/views/admin_users/_form.html.haml:5:in `block in _app_views_admin_users__form_html_haml__1246903527119445700_70265536184000__2739696386253333433'
+  app/views/admin_users/_form.html.haml:1:in `_app_views_admin_users__form_html_haml__1246903527119445700_70265536184000__2739696386253333433'
+  app/views/admin_users/edit.html.haml:1:in `_app_views_admin_users_edit_html_haml__1947138358334746731_70265536403660_120140869276881284'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.6ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:09:55 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+Rendered admin_users/_form.html.haml (40.4ms)
+Rendered admin_users/edit.html.haml within layouts/admin (47.7ms)
+Completed 200 OK in 61ms (Views: 49.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin_users/1/edit" for 127.0.0.1 at 2011-12-16 12:15:17 -0600
+  Processing by AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+Rendered admin_users/_form.html.haml (21.7ms)
+Rendered admin_users/edit.html.haml within layouts/admin (29.5ms)
+Completed 200 OK in 61ms (Views: 31.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:15:19 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (51.8ms)
+Completed 200 OK in 64ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users/new" for 127.0.0.1 at 2011-12-16 12:15:23 -0600
+  Processing by AdminUsersController#new as HTML
+Rendered admin_users/new.html.haml within layouts/admin (23.2ms)
+Completed 200 OK in 36ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_users/new" for 127.0.0.1 at 2011-12-16 12:17:28 -0600
+  Processing by AdminUsersController#new as HTML
+Rendered admin_users/_form.html.haml (37.1ms)
+Rendered admin_users/new.html.haml within layouts/admin (44.4ms)
+Completed 200 OK in 59ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_users/new" for 127.0.0.1 at 2011-12-16 12:19:29 -0600
+  Processing by AdminUsersController#new as HTML
+Rendered admin_users/_form.html.haml (38.2ms)
+Rendered admin_users/new.html.haml within layouts/admin (45.6ms)
+Completed 200 OK in 59ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin_users/new" for 127.0.0.1 at 2011-12-16 12:19:35 -0600
+  Processing by AdminUsersController#new as HTML
+Rendered admin_users/_form.html.haml (20.4ms)
+Rendered admin_users/new.html.haml within layouts/admin (45.2ms)
+Completed 200 OK in 59ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:24:06 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+Completed 500 Internal Server Error in 17ms
+
+NameError (undefined local variable or method `admin_user' for #<AdminUsersController:0x007fcff3856748>):
+  app/controllers/admin_users_controller.rb:36:in `block in create'
+  app/controllers/admin_users_controller.rb:35:in `create'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (20.7ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.5ms)
+
+
+Started GET "/admin_users/new" for 127.0.0.1 at 2011-12-16 12:24:36 -0600
+  Processing by AdminUsersController#new as HTML
+Rendered admin_users/_form.html.haml (36.9ms)
+Rendered admin_users/new.html.haml within layouts/admin (44.6ms)
+Completed 200 OK in 58ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:24:38 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+Rendered admin_users/_form.html.haml (15.0ms)
+Rendered admin_users/new.html.haml within layouts/admin (41.3ms)
+Completed 200 OK in 80ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:24:41 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+Rendered admin_users/_form.html.haml (15.2ms)
+Rendered admin_users/new.html.haml within layouts/admin (22.8ms)
+Completed 200 OK in 62ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:28:14 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+Rendered admin_users/_form.html.haml (33.9ms)
+Rendered admin_users/new.html.haml within layouts/admin (40.9ms)
+Completed 200 OK in 61ms (Views: 42.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:28:15 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+Rendered admin_users/_form.html.haml (15.4ms)
+Rendered admin_users/new.html.haml within layouts/admin (23.1ms)
+Completed 200 OK in 60ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:28:16 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+Rendered admin_users/_form.html.haml (32.5ms)
+Rendered admin_users/new.html.haml within layouts/admin (40.2ms)
+Completed 200 OK in 60ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:28:18 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mROLLBACK[0m
+Rendered admin_users/_form.html.haml (15.0ms)
+Rendered admin_users/new.html.haml within layouts/admin (41.0ms)
+Completed 200 OK in 78ms (Views: 42.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2011-12-16 12:28:47 -0600
+  Processing by TasksController#index as HTML
+  [1m[35mTask Load (11.7ms)[0m  SELECT `tasks`.* FROM `tasks`
+Rendered tasks/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 38ms (Views: 24.2ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2011-12-16 12:28:51 -0600
+  Processing by TasksController#new as HTML
+Rendered tasks/_form.html.erb (4.9ms)
+Rendered tasks/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:30:42 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered admin_users/_form.html.haml (15.6ms)
+Rendered admin_users/new.html.haml within layouts/admin (41.1ms)
+Completed 200 OK in 79ms (Views: 43.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:30:43 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered admin_users/_form.html.haml (14.1ms)
+Rendered admin_users/new.html.haml within layouts/admin (21.3ms)
+Completed 200 OK in 59ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:35:13 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered admin_users/_form.html.haml (33.7ms)
+Rendered admin_users/new.html.haml within layouts/admin (41.4ms)
+Completed 200 OK in 63ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:35:16 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered admin_users/_form.html.haml (15.4ms)
+Rendered admin_users/new.html.haml within layouts/admin (23.1ms)
+Completed 200 OK in 62ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:35:19 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered admin_users/_form.html.haml (33.5ms)
+Rendered admin_users/new.html.haml within layouts/admin (41.7ms)
+Completed 200 OK in 63ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:35:21 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered admin_users/_form.html.haml (15.0ms)
+Rendered admin_users/new.html.haml within layouts/admin (41.3ms)
+Completed 200 OK in 81ms (Views: 43.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:36:08 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"Akita", "last_name"=>"Gaylord", "username"=>"akita_cole", "hashed_password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  ROLLBACK
+Rendered admin_users/_form.html.haml (14.3ms)
+Rendered admin_users/new.html.haml within layouts/admin (22.3ms)
+Completed 200 OK in 61ms (Views: 24.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:36:09 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (35.8ms)
+Completed 200 OK in 48ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin_users/new" for 127.0.0.1 at 2011-12-16 12:42:35 -0600
+  Processing by AdminUsersController#new as HTML
+Rendered admin_users/_form.html.haml (37.9ms)
+Rendered admin_users/new.html.haml within layouts/admin (46.3ms)
+Completed 200 OK in 60ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:42:51 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"akita", "last_name"=>"cole", "username"=>"akita_cole", "password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `admin_users`[0m
+  [1m[35mAREL (1.7ms)[0m  INSERT INTO `admin_users` (`first_name`, `last_name`, `email`, `hashed_password`, `created_at`, `updated_at`, `username`, `salt`) VALUES ('akita', 'cole', '', 'a24f002933c43134c0b1cbc2e41fa58847db6478', '2011-12-16 18:42:51', '2011-12-16 18:42:51', 'akita_cole', 'f46d107d125dfb864ab050a24c96afed481707fb')
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+Completed 404 Not Found in 23ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :controller=>"admin_users"}):
+  app/controllers/admin_users_controller.rb:37:in `block (2 levels) in create'
+  app/controllers/admin_users_controller.rb:35:in `create'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:49:27 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"akita", "last_name"=>"cole", "username"=>"akita_cole", "password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.3ms)[0m  [1mdescribe `admin_users`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `admin_users` (`first_name`, `last_name`, `email`, `hashed_password`, `created_at`, `updated_at`, `username`, `salt`) VALUES ('akita', 'cole', '', '4118fc153b7110c01c2fa6c911d6dfe38bf7c282', '2011-12-16 18:49:27', '2011-12-16 18:49:27', 'akita_cole', '6ee8fc276e1219e023be05093235d4375bfe8c6b')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin_users
+Completed 302 Found in 24ms
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:49:27 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC
+Rendered admin_users/index.html.haml within layouts/admin (37.8ms)
+Completed 200 OK in 51ms (Views: 39.8ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/admin_users/3" for 127.0.0.1 at 2011-12-16 12:49:35 -0600
+  Processing by AdminUsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "id"=>"3"}
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mDELETE FROM `admin_users` WHERE `admin_users`.`id` = 3[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/tasks/3
+Completed 302 Found in 20ms
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2011-12-16 12:49:35 -0600
+  Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 3 LIMIT 1[0m
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=3):
+  app/controllers/tasks_controller.rb:16:in `show'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2011-12-16 12:50:23 -0600
+  Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT `tasks`.* FROM `tasks` WHERE `tasks`.`id` = 3 LIMIT 1
+Completed 404 Not Found in 4ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task with ID=3):
+  app/controllers/tasks_controller.rb:16:in `show'
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:50:33 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (19.3ms)
+Completed 200 OK in 51ms (Views: 20.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/admin_users/4" for 127.0.0.1 at 2011-12-16 12:50:36 -0600
+  Processing by AdminUsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "id"=>"4"}
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 4 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  DELETE FROM `admin_users` WHERE `admin_users`.`id` = 4
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin_users
+Completed 302 Found in 20ms
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:50:36 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC
+Rendered admin_users/index.html.haml within layouts/admin (19.0ms)
+Completed 200 OK in 32ms (Views: 20.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin_users/new" for 127.0.0.1 at 2011-12-16 12:50:42 -0600
+  Processing by AdminUsersController#new as HTML
+Rendered admin_users/_form.html.haml (20.0ms)
+Rendered admin_users/new.html.haml within layouts/admin (48.5ms)
+Completed 200 OK in 62ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin_users" for 127.0.0.1 at 2011-12-16 12:51:00 -0600
+  Processing by AdminUsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "admin_user"=>{"first_name"=>"akiat", "last_name"=>"cole", "username"=>"akita_cole", "password"=>"[FILTERED]"}, "commit"=>"Create Admin user"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  describe `admin_users`
+  [1m[36mAREL (0.8ms)[0m  [1mINSERT INTO `admin_users` (`first_name`, `last_name`, `email`, `hashed_password`, `created_at`, `updated_at`, `username`, `salt`) VALUES ('akiat', 'cole', '', '4d7a0c0132d6d01261dca83f58fb97b9122ec89f', '2011-12-16 18:51:00', '2011-12-16 18:51:00', 'akita_cole', '032253fe7aa399018e7d6892704e2df8fb610edc')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin_users
+Completed 302 Found in 21ms
+
+
+Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:51:00 -0600
+  Processing by AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
+Rendered admin_users/index.html.haml within layouts/admin (39.0ms)
+Completed 200 OK in 50ms (Views: 40.7ms | ActiveRecord: 2.5ms)

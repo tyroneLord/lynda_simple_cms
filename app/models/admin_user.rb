@@ -11,6 +11,7 @@ class AdminUser < ActiveRecord::Base
   # TO USE THE ABOVE SCOPE WE WOULD DO THIS IN CONSOLE 
   # AdminUser.name("tyrone", "gaylord")
   validates_length_of :password, :within => 5..25, :on => :create
+  validates_presence_of :first_name, :last_name, :username
   attr_accessor :password
   before_save :create_hashed_password
   after_save :clear_password

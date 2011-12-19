@@ -8,6 +8,7 @@ gem 'rails', '3.0.11'
 gem 'mysql'
 gem 'haml'
 gem 'sass'
+gem "simple_form"
 
 group :development do
   gem 'thin', '~> 1.3.1'
