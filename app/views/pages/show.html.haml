@@ -1,0 +1,16 @@
+- @page_title = "Tyrone's Site"
+
+= link_to "Back To List", pages_path, :class => 'back-link'
+
+.subject.show
+  %h2 Show Page
+  %table{:summary => "Subject detail view"}
+    %tr
+      %th First Name
+      %td=@page.name
+    %tr
+      %th Permalink
+      %td=@page.permalink
+    %tr
+      %th Position
+      %td=@page.position

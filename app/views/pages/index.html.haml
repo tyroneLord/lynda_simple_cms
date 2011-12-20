@@ -1,0 +1,16 @@
+.admin_user.list
+  %h2 Pages
+  %table.listing
+    %tr.header
+      %th Page Name
+      %th Permalink
+      %th Position
+    - @pages.each do |page|
+      %tr.header
+        %td= page.name
+        %td= page.permalink
+        %td= page.position
+        %td.actions
+          =link_to "Show", page_path(page.id), :class => 'action show'
+          =link_to "Edit", edit_page_path(page.id), :class => 'action edit'
+          / =link_to "Delete", admin, :confirm => 'Are you sure', :method => :delete

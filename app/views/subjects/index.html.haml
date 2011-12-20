@@ -17,6 +17,7 @@
         %td.center #{status_tag(subject.visible)}
         %td.center=subject.pages.size
         %td.actions
+          =link_to "View Pages", pages_path(subject.id), :class => "action show"
           =link_to "Show", subject_path(subject), :class => 'action show'
           =link_to "Edit", edit_subject_path(subject.id), :class => 'action edit'
           =link_to "Delete", subject, :confirm => 'Are you sure', :method => :delete

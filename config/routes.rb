@@ -1,6 +1,7 @@
 SimpleCms::Application.routes.draw do
   
   get "acess/login"
+  # A FORM SHOULD BE A POST REQUEST
   post "acess/attempt_login"
   
   get "acess/menu"
@@ -10,7 +11,8 @@ SimpleCms::Application.routes.draw do
   match 'admin', :to => 'acess#index'
 
   root :to => 'subjects#index'
-
+  
+  resources :pages
   resources :tasks
   resources :admin_users
 

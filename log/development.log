@@ -11095,3 +11095,211 @@ Started GET "/admin_users" for 127.0.0.1 at 2011-12-16 12:51:00 -0600
   [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` ORDER BY admin_users.last_name ASC[0m
 Rendered admin_users/index.html.haml within layouts/admin (39.0ms)
 Completed 200 OK in 50ms (Views: 40.7ms | ActiveRecord: 2.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-20 16:46:25 -0600
+  Processing by SubjectsController#index as HTML
+  [1m[36mSQL (20.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` ORDER BY subjects.position ASC
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 3)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 4)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 6)[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) FROM `pages` WHERE (`pages`.subject_id = 7)
+Rendered subjects/index.html.haml within layouts/admin (86.4ms)
+Completed 200 OK in 228ms (Views: 108.1ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2011-12-20 16:49:30 -0600
+  Processing by PagesController#index as HTML
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1[0m
+  [1m[35mPage Load (0.2ms)[0m  SELECT `pages`.* FROM `pages`
+Rendered pages/index.html.haml within layouts/application (30.8ms)
+Completed 200 OK in 53ms (Views: 46.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2011-12-20 16:49:37 -0600
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1
+Rendered pages/show.html.haml within layouts/application (22.3ms)
+Completed 200 OK in 38ms (Views: 28.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages/1/edit" for 127.0.0.1 at 2011-12-20 16:49:41 -0600
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1[0m
+  [1m[35mPage Load (0.5ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1
+Rendered pages/edit.html.haml within layouts/application (22.5ms)
+Completed 200 OK in 39ms (Views: 29.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/1/edit" for 127.0.0.1 at 2011-12-20 16:51:23 -0600
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1
+Rendered pages/_form.html.haml (292.2ms)
+Rendered pages/edit.html.haml within layouts/application (298.8ms)
+Completed 200 OK in 329ms (Views: 320.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/pages/1" for 127.0.0.1 at 2011-12-20 16:52:09 -0600
+  Processing by PagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwbgML2rtucurVGtGxa2eTu8Tm16roILV1Y57PcY6ks=", "page"=>{"name"=>"first page_Inherited", "permalink"=>"", "position"=>"1"}, "commit"=>"Update Page", "id"=>"1"}
+  [1m[36mSubject Load (0.4ms)[0m  [1mSELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1[0m
+  [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  UPDATE `pages` SET `name` = 'first page_Inherited', `permalink` = '', `updated_at` = '2011-12-20 22:52:09' WHERE `pages`.`id` = 1
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/pages/1
+Completed 302 Found in 69ms
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2011-12-20 16:52:09 -0600
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1[0m
+Rendered pages/show.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 21ms (Views: 12.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2011-12-20 16:54:06 -0600
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1[0m
+Rendered pages/show.html.haml within layouts/application (32.8ms)
+Completed 200 OK in 48ms (Views: 38.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2011-12-20 16:54:10 -0600
+  Processing by PagesController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`[0m
+Rendered pages/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+
+
+Started GET "/subject_pages" for 127.0.0.1 at 2011-12-20 17:14:55 -0600
+
+ActionController::RoutingError (No route matches "/subject_pages"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/edit_subject_pages" for 127.0.0.1 at 2011-12-20 17:15:47 -0600
+
+ActionController::RoutingError (No route matches "/edit_subject_pages"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+
+
+Started GET "/edit_subject_pages" for 127.0.0.1 at 2011-12-20 17:16:03 -0600
+
+ActionController::RoutingError (No route matches "/edit_subject_pages"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/edit_subject_pages" for 127.0.0.1 at 2011-12-20 17:16:21 -0600
+
+ActionController::RoutingError (No route matches "/edit_subject_pages"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/page" for 127.0.0.1 at 2011-12-20 17:16:26 -0600
+
+ActionController::RoutingError (No route matches "/page"):
+  
+
+Rendered /Users/tgaylord/.rvm/gems/ruby-1.9.2-p290@lynda/gems/actionpack-3.0.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/tgaylord/tukaiz/lynda_work/ch7/config/environment.rb:5)
+
+
+Started GET "/pages" for 127.0.0.1 at 2011-12-20 17:16:55 -0600
+  Processing by PagesController#index as HTML
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`[0m
+Rendered pages/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 78ms (Views: 20.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/1/edit" for 127.0.0.1 at 2011-12-20 17:17:39 -0600
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubject Load (0.1ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.5ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1[0m
+Rendered pages/_form.html.haml (232.0ms)
+Rendered pages/edit.html.haml within layouts/application (238.8ms)
+Completed 200 OK in 253ms (Views: 244.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2011-12-20 17:17:46 -0600
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1[0m
+Rendered pages/show.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 27ms (Views: 18.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2011-12-20 17:18:08 -0600
+  Processing by PagesController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`[0m
+Rendered pages/index.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 26ms (Views: 19.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2011-12-20 17:18:23 -0600
+  Processing by PagesController#index as HTML
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`[0m
+Rendered pages/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 27ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/1" for 127.0.0.1 at 2011-12-20 17:18:26 -0600
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.6ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1[0m
+Rendered pages/show.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 28ms (Views: 18.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2011-12-20 17:18:33 -0600
+  Processing by PagesController#index as HTML
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages`[0m
+Rendered pages/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 26ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/1/edit" for 127.0.0.1 at 2011-12-20 17:18:35 -0600
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSubject Load (0.3ms)[0m  SELECT `subjects`.* FROM `subjects` WHERE `subjects`.`id` IS NULL LIMIT 1
+  [1m[36mPage Load (0.4ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 1 LIMIT 1[0m
+Rendered pages/_form.html.haml (40.1ms)
+Rendered pages/edit.html.haml within layouts/application (47.4ms)
+Completed 200 OK in 62ms (Views: 53.5ms | ActiveRecord: 0.6ms)

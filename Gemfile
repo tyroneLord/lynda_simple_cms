@@ -9,6 +9,8 @@ gem 'mysql'
 gem 'haml'
 gem 'sass'
 gem "simple_form"
+gem 'inherited_resources'
+gem 'has_scope'
 
 group :development do
   gem 'thin', '~> 1.3.1'
